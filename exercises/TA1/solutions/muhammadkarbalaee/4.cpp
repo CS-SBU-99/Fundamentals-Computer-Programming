@@ -3,12 +3,15 @@
 using namespace std;
 int main()
 {
-	unsigned int num,sum=0,rem;
-	cin >> num;
-	while (num > 0) { rem = num % 10;
-	sum = sum + rem;
-	num = num / 10;
-	}
-	cout << sum;
+	int xa, xb, xc, ya, yb, yc;
+	double AB, AC, BC,total;
+	cin >> xa >> ya;
+	cin >> xb >> yb;
+	cin >> xc >> yc;
+	 AB = sqrt(pow(xa - xb, 2) + pow(ya - yb, 2));
+     BC = sqrt(pow(xb - xc, 2) + pow(yb - yc, 2));
+     AC = sqrt(pow(xa - xc, 2) + pow(ya - yc, 2));
+	 total = ceil(AB + AC + BC);
+	cout << total;
 	return 0;
 }

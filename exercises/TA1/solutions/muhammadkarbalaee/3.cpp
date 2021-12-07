@@ -1,12 +1,13 @@
+#include<iomanip>
 #include<iostream>
-#include<cmath>
 using namespace std;
 int main()
 {
-	float xa, xb, ya, yb;
-	cin >> xa >> ya;
-	cin >> xb >> yb;
-	float dis = sqrt(pow(xa - xb, 2) + pow(ya - yb, 2));
-		cout << dis;
+	double icpp, ijava, iinflation;
+	cin >> icpp >> ijava >> iinflation;
+	double sjava = 50 * ijava * ((iinflation/100)+1);
+	double scpp = 150 * icpp *((iinflation / 100)+1);
+	double total = scpp + sjava;
+	cout << fixed << setprecision(2) << total;
 	return 0;
 }

@@ -2,9 +2,6 @@
 using namespace std;
 int main()
 {
-	float a, b, c;
-	cin >> a >> b >> c;
-	float average = (a + b + c) / 3.0;
-	cout << average;
+	cout << "welcome to \"C++\"\n" << "this language is my love\n" << "the \'c++\' website    \\www.cplusplus.com\\ \n" << "is a good source to learn!\n";
 	return 0;
 }
